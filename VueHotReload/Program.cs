@@ -24,9 +24,10 @@ if (app.Environment.IsDevelopment())
     })!.StandardInput.WriteLine("npm run serve");
 }
 
+
 app.MapGet("/api/test", () =>
 {
-    Console.WriteLine("ete");
+    Console.WriteLine("/api/test route log.");
     return "Hello World!";
 });
 

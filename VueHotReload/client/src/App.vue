@@ -1,22 +1,3 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div><a href="/api/test">Test Route</a></div>
-  </div>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -27,3 +8,20 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<template>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld :msg="msg"/>
+    <div><a href="/api/test">Test Route</a></div>
+  </div>
+</template>
+
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+const msg = ref('Welcome to Your Vue.js App')
+
+</script>
+

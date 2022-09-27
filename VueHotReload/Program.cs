@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
 {
     Process.Start(new ProcessStartInfo
     {
-        FileName = "cmd",
+        FileName = OperatingSystem.IsWindows() ? "cmd" : "bash",
         RedirectStandardInput = true,
         WorkingDirectory = Path.Combine(Environment.CurrentDirectory, "client")
     })!.StandardInput.WriteLine("npm run serve");

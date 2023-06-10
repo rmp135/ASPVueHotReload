@@ -1,6 +1,8 @@
 # ASP .NET 6 with Vue Hot Reload
 
-This solution demonstrates how to setup ASP .NET 6 with Vue.js, enabling Hot Module Reloading. Essentially combining the boilerplate ASP.NET and [Vite](https://vitejs.dev/) with improved interoperability between the two.
+This project template demonstrates how to setup ASP .NET 6 with Vue.js, enabling Hot Module Reloading. Essentially combining the boilerplate ASP.NET and [Vite](https://vitejs.dev/) with improved interoperability between the two.
+
+To use, download the folder as a zip file and place it in your user project templates folder. On Windows this is `%userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates\C#` for VS2022.
 
 After cloning the repo, navigate to the client folder and run `npm install` to install the frontend dependencies.
 

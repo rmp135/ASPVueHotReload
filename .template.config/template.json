@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Ryan Poole",
+  "classifications": [
+    "Web"
+  ],
+  "identity": "ASP.NET Core with Vue Hot Reload",
+  "name": "ASP.NET Core with Vue Hot Reload",
+  "shortName": "aspvue",
+  "sourceName": "VueHotReload",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "description": "ASP.NET Core with Vue Hot Reload",
+  "preferNameDirectory": true
+}

@@ -3,7 +3,7 @@ using System.Diagnostics;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -24,12 +24,7 @@ if (app.Environment.IsDevelopment())
     })!.StandardInput.WriteLine("npm run serve");
 }
 
-
-app.MapGet("/api/test", () =>
-{
-    Console.WriteLine("/api/test route log.");
-    return "Hello World!";
-});
+app.MapControllerRoute("default", "api/{controller=Home}/{action=Index}/{id?}");
 
 app.UseDefaultFiles();
 
@@ -37,9 +32,4 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
-
+app.Run("http://localhost:3005");

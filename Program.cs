@@ -32,4 +32,4 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.Run("http://localhost:3005");
+app.Run();

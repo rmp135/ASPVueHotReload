@@ -6,12 +6,13 @@
   ],
   "identity": "ASP.NET Core with Vue Hot Reload",
   "name": "ASP.NET Core with Vue Hot Reload",
-  "shortName": "aspvue",
+  "shortName": "vuehotreload",
   "sourceName": "VueHotReload",
   "tags": {
     "language": "C#",
     "type": "project"
   },
   "description": "ASP.NET Core with Vue Hot Reload",
-  "preferNameDirectory": true
+  "preferNameDirectory": true,
+  "defaultName": "VueHotReload"
 }

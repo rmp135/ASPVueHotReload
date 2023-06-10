@@ -14,5 +14,16 @@
   },
   "description": "ASP.NET Core with Vue Hot Reload",
   "preferNameDirectory": true,
-  "defaultName": "VueHotReload"
+  "defaultName": "VueHotReload",
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "README.md"
+          ]
+        }
+      ]
+    }
+  ]
 }

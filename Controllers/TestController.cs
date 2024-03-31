@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace VueHotReload.Controllers
+namespace VueHotReload.Controllers;
+
+public class TestController : Controller
 {
-    public class TestController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            return Ok("Hello World!");
-        }
+        return Ok("Hello World!");
     }
 }
